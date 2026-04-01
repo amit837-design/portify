@@ -1,0 +1,5 @@
+1.mobile view not perfect
+2.navbar template doesn't word
+3.rightpanel text editors properties are not changeable(like size)
+4.A delete button is needed in rightpanel to delete the particular section
+5.image placeholders in hero and about section is not workable

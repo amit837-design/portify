@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  height: 100vh;
+  /* Replaced solid dark background with a smooth, unified gradient */
+  background: radial-gradient(ellipse at 30% 50%, #111111 0%, #050505 100%);
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+/* LEFT SIDE */
+.left {
+  flex: 1.2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  /* Made transparent so the container gradient flows through */
+  background: transparent;
+}
+
+.glow {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 92, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 5;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ff5c00;
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+}
+
+.content h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.content h1 span {
+  color: #ff5c00;
+}
+
+.content p {
+  font-size: 1.1rem;
+  color: #888;
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+/* DECORATIONS */
+.float {
+  position: absolute;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  z-index: 2;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card1 {
+  width: 200px;
+  height: 120px;
+  top: 15%;
+  right: 10%;
+  transform: rotate(10deg);
+}
+
+.card2 {
+  width: 150px;
+  height: 180px;
+  bottom: 15%;
+  left: 40%;
+  transform: rotate(-5deg);
+  border-color: #ff5c0033;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #ff5c00;
+  border-radius: 50%;
+  bottom: 30%;
+  right: 25%;
+  box-shadow: 0 0 15px #ff5c00;
+}
+
+/* RIGHT SIDE */
+.right {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Made transparent and removed the border-left completely */
+  background: transparent;
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 3rem;
+}
+
+.loginCard h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.loginCard p {
+  color: #666;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
+}
+
+.githubBtn {
+  width: 100%;
+  padding: 1rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+.githubBtn:hover {
+  background: #eeeeee;
+  transform: translateY(-2px);
+}
+
+.footerText {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.footerText span {
+  color: #888;
+  text-decoration: underline;
+  cursor: pointer;
+}

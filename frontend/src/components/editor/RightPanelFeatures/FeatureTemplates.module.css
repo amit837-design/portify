@@ -1,0 +1,85 @@
+.templateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.templateLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.templateCard {
+  padding: 12px;
+  background: var(--bg-card);
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.templateCard:hover {
+  border-color: #555;
+}
+
+.templateCard.active {
+  background: rgba(255, 92, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.cardTitle {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* --- Wireframe Building Blocks --- */
+.wireRow {
+  width: 100%;
+  background: #222;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 4px;
+}
+
+.wireBox {
+  background: #444;
+  border-radius: 2px;
+}
+.wireText {
+  background: #666;
+  border-radius: 2px;
+}
+.wirePrimary {
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+/* --- Navigation Button --- */
+.backBtn {
+  width: 100%;
+  padding: 8px;
+  background: transparent;
+  border: 1px dashed #555;
+  color: #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.backBtn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}

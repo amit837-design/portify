@@ -1,0 +1,123 @@
+.header {
+  height: 60px;
+  background: var(--bg-panel);
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: 220px;
+}
+
+/* --- Center Navigation --- */
+.headerCenter {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: #000;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.elementBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--bg-card);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: grab;
+  transition: 0.2s;
+}
+
+.elementBtn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.elementBtn.active {
+  background: #252525;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.elementBtn.active :global(svg) {
+  stroke: var(--primary);
+}
+
+.btnText {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* --- Right Controls --- */
+.controls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 220px;
+  justify-content: flex-end;
+}
+
+.viewGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.viewBtn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.viewBtn.active {
+  color: #fff;
+}
+
+.exportBtn {
+  background: var(--primary);
+  border: none;
+  padding: 6px 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.exportBtn:hover {
+  background: var(--primary-hover, #e04e00);
+  transform: translateY(-1px);
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #ff5c00;
+  object-fit: cover;
+}
+
+.exportBtn:disabled {
+  background: #444;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

@@ -1,0 +1,26 @@
+:root {
+  --primary: #ff5c00;
+  --bg-main: #000000;
+  --bg-panel: #111111;
+  --bg-card: #1c1c1c;
+  --text-muted: #a1a1aa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  background: var(--bg-main);
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+}

@@ -1,0 +1,45 @@
+.sidebar {
+  background: #111111;
+  border-right: 1px solid #333;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.resizerR {
+  position: absolute;
+  right: -4px;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  cursor: col-resize;
+  z-index: 10;
+}
+
+.resizerR:hover {
+  background: rgba(255, 92, 0, 0.5);
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Perfect breathing room below the title */
+  margin-top: 10px;
+}
+
+.catTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Forces a perfect 2-column layout */
+  gap: 12px; /* Locks the spacing between the cards */
+}

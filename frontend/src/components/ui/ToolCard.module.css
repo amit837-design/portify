@@ -1,0 +1,29 @@
+.toolCard {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  color: var(--text-muted);
+  cursor: grab;
+  transition: 0.2s;
+}
+.toolCard:hover {
+  background: #252525;
+  color: var(--primary);
+}
+.toolCard:hover :global(svg) {
+  stroke: var(--primary);
+}
+.active {
+  background: #252525;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.active :global(svg) {
+  stroke: var(--primary);
+}
