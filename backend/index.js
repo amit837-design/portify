@@ -18,6 +18,7 @@ app.use(
 // Basic Health Check
 app.get("/", (req, res) => {
   res.send("Portify Backend API is running... 🚀");
+  console.log("Running now");
 });
 
 const authRoutes = require("./src/routes/authRoutes");

@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const exportController = require("../controllers/exportController");
-const { protect } = require("../middleware/authMiddleware");
+//const { protect } = require("../middleware/authMiddleware");
 
-router.post("/deploy", protect, exportController.deployToGitHub);
+router.post("/deploy", exportController.deployToGitHub);
 
 module.exports = router;
